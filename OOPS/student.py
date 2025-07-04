@@ -1,4 +1,6 @@
+#static variable --
 class Student:
+    coll='MES'  # defined static variable
     def details(self,f_name,l_name,course,Gender,coll_number):
         self.f_name=f_name
         self.l_name=l_name
@@ -6,7 +8,7 @@ class Student:
         self.Gender=Gender
         self.coll_number=coll_number
     def print_value(self):
-        print(self.f_name,self.l_name,self.course,self.Gender,self.coll_number)
+        print(self.f_name,self.l_name,self.course,self.Gender,self.coll_number,Student.coll)
 s1=Student()
 s1.details('Ashlin','Shaji','CSE','Male','001')
 s1.print_value()
